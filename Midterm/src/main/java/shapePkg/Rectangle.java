@@ -16,7 +16,15 @@ public class Rectangle extends Shape implements Comparable<Rectangle>{
 	public int getWidth() {
 		return width;
 	}
+	
+	public void setLength(int length) {
+		this.length = length;
+	}
 
+	public void setWidth(int width) {
+		this.width = width;
+	}
+	
 	public int perimeter() {
 		return 2*this.length+2*this.width;
 	}
@@ -25,6 +33,7 @@ public class Rectangle extends Shape implements Comparable<Rectangle>{
 		return this.length*this.width;
 	}
 	
+
 	public int compareTo(Rectangle r) {
 		return this.area()-r.area();
 	}
