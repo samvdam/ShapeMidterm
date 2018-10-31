@@ -26,10 +26,9 @@ public class Cuboid extends Rectangle{
 		return this.depth*super.area();
 	}
 	
-//	public int perimeter() {
-//		throw new UnsupportedOperationException();
-//		return 0;
-//	}
+	public int perimeter() {
+		throw new UnsupportedOperationException();
+	}
 	
 	public class SortByArea implements Comparator<Cuboid>{
 		public int compare(Cuboid a, Cuboid b) {
